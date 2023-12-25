@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: Poppins, sans-serif;
+}
+
+//Typography
+
+$heading40: 40px;
+$heading32: 32px;
+$heading24: 24px;
+$body16: 16px;
+$body15: 15px;
+
+// Colours
+
+$dark-90: #2A3540;
+$dark-80: #586877;
+$light-80: #BCC7D2;
+$light-90: #DDE4EB;
+$light-95: #F4F7FA;
+$light-100: #FFFFFF;
+$primary: #7544FF;
+$primary-light: #8B62FF;
+
+
+// Shadows
+
+$shadow: 0px 7px 9.1px 0px rgba(30, 47, 65, 0.06);
+
+
+// Components
+
+@mixin h1-heading{
+  font-size: $heading40;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@mixin h2-heading{
+  font-size: $heading32;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@mixin h3-heading{
+  font-size: $heading24;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@mixin body{
+  font-size: $body16;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin body15{
+  font-size: $body16;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+
+// Interactive
+
+@mixin primaryBtn {
+  padding: 12px 24px;
+  font-size: $body15;
+  color: $light-100;
+  border-radius: 5px;
+  background-color: $primary;
+  transition: all 0.2s ease-out;
+  border: none;
+
+  &:hover{
+    background-color: $primary-light;
+  }
+}
+
+@mixin link{
+  color: $primary;
+  font-size: $body15;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+
+  &:hover{
+    color: $primary-light;
+  }
+}
+
+@mixin input{
+  padding: 12px 16px;
+  background-color: $light-100;
+  border-radius: 5px;
+  border: 1px solid $light-90;
+  color: $dark-80;
+  font-size: $body15;
+  transition: all 0.3s ease-out;
+
+  &:hover{
+    border-color: $light-80;
+
+    &:focus{
+      border-color: $primary-light;
+    }
+  }
+}
