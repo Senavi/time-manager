@@ -52,6 +52,25 @@ body{
         @include primaryBtn;
         margin-top: 30px;
       }
+
+      p{
+        @include body15;
+        text-align: center;
+        width: 100%;
+        color: $dark-80;
+        margin-top: 20px;
+      }
+
+      #support-text{
+        @include support-text;
+        margin: 0;
+      }
+      .error{
+        color: $error;
+      }
+      .success{
+        color: $success;
+      }
     }
   }
 

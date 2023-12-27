@@ -74,6 +74,25 @@ body .sign form button {
 body .sign form button:hover {
   background-color: #8B62FF;
 }
+body .sign form p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  width: 100%;
+  color: #586877;
+  margin-top: 20px;
+}
+body .sign form #support-text {
+  font-size: 12px;
+  margin: 0;
+}
+body .sign form .error {
+  color: #e81d1d;
+}
+body .sign form .success {
+  color: #19a11a;
+}
 body a {
   color: #7544FF;
   font-size: 15px;

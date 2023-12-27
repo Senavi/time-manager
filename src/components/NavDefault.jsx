@@ -1,18 +1,25 @@
+import { useNavigate } from 'react-router-dom';
 import '../style/nav.css';
 import Logotype from '../assets/Logo.svg';
 
-function NavDefault() {
+function NavDefault(props) {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate(props.navigateTo);
+    }
+
     return (
         <header>
             <div className="container">
                 <a href="#"><img src={Logotype} alt="Malta logo"/></a>
                 <div className="right-col">
-                    <p>Don't have an account?</p>
-                    <button className="primary">Sign up</button>
+                    <p>{props.text}</p>
+                    <button className="primary" onClick={handleButtonClick}>{props.btn}</button>
                 </div>
             </div>
         </header>
     )
 }
 
-export default NavDefault
+export default NavDefault;
